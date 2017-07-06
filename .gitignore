@@ -1,4 +1,5 @@
 *.iml
 target
 .idea
-data
+dfs
+.ipynb_checkpoints
