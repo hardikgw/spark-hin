@@ -28,3 +28,6 @@ cd $SPARK_HOME
 
 jupyter kernelspec list
 jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root
+
+docker exec spark hdfs dfs -mkdir /data
+docker exec spark hdfs dfs -put data/yago/yagoFacts.tsv /data/yagoFacts.tsv
